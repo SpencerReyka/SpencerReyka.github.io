@@ -110,11 +110,12 @@
 
   <!-- GitHub Activity -->
   <h2>Activity</h2>
-  <img
-    src="https://ghchart.rshah.org/a78bfa/SpencerReyka"
-    alt="GitHub contribution chart"
-    style="width:100%;max-width:100%;filter:opacity(0.85);"
-  />
+  <div id="gh-chart"></div>
+  <script>
+    fetch('https://ghchart.rshah.org/a78bfa/SpencerReyka')
+      .then(r => r.text())
+      .then(svg => { document.getElementById('gh-chart').innerHTML = svg; });
+  </script>
 
   <!-- Contact -->
   <h2>Contact</h2>

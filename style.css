@@ -137,6 +137,19 @@ a:hover {
   font-size: 0.875rem;
 }
 
+/* GitHub chart */
+#gh-chart svg {
+  width: 100%;
+  height: auto;
+  opacity: 0.85;
+}
+
+#gh-chart rect[fill="#ebedf0"] { fill: #1a1a1a; }
+#gh-chart rect[fill="#9be9a8"],
+#gh-chart rect[fill="#40c463"],
+#gh-chart rect[fill="#30a14e"],
+#gh-chart rect[fill="#216e39"] { opacity: 0.9; }
+
 /* Footer */
 footer {
   margin-top: 5rem;
